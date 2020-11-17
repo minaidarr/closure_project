@@ -15,6 +15,7 @@
 		372761262547C32A001FB36B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372761252547C32A001FB36B /* Assets.xcassets */; };
 		372761292547C32A001FB36B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372761272547C32A001FB36B /* LaunchScreen.storyboard */; };
 		372761382547C7F9001FB36B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372761372547C7F9001FB36B /* Models.swift */; };
+		37359AAA2563736A00F2CA21 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37359AA92563736A00F2CA21 /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		372761282547C32A001FB36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3727612A2547C32A001FB36B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372761372547C7F9001FB36B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		37359AA92563736A00F2CA21 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		77C9A8C49593A94681852537 /* libPods-Closure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Closure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80985ABFEA988DAEA8140199 /* Pods-Closure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Closure.debug.xcconfig"; path = "Target Support Files/Pods-Closure/Pods-Closure.debug.xcconfig"; sourceTree = "<group>"; };
 		F10BDD52ED211F96C1E11202 /* Pods-Closure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Closure.release.xcconfig"; path = "Target Support Files/Pods-Closure/Pods-Closure.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				372761202547C329001FB36B /* ViewController.swift */,
 				372761372547C7F9001FB36B /* Models.swift */,
 				372761222547C329001FB36B /* Main.storyboard */,
+				37359AA92563736A00F2CA21 /* SecondVC.swift */,
 				372761252547C32A001FB36B /* Assets.xcassets */,
 				372761272547C32A001FB36B /* LaunchScreen.storyboard */,
 				3727612A2547C32A001FB36B /* Info.plist */,
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				372761212547C329001FB36B /* ViewController.swift in Sources */,
+				37359AAA2563736A00F2CA21 /* SecondVC.swift in Sources */,
 				3727611D2547C329001FB36B /* AppDelegate.swift in Sources */,
 				3727611F2547C329001FB36B /* SceneDelegate.swift in Sources */,
 				372761382547C7F9001FB36B /* Models.swift in Sources */,

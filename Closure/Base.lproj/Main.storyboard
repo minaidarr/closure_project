@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nsr-5Y-DKt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Page 1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Closure" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X0D-sd-JbH">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="first" rowHeight="255" id="HiA-7B-kq6" customClass="FirstCell" customModule="Closure" customModuleProvider="target">
@@ -132,13 +132,42 @@
                             <constraint firstItem="X0D-sd-JbH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fKF-cI-yhd"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Page 1" id="dXa-QM-QYA"/>
                     <connections>
                         <outlet property="tableView" destination="X0D-sd-JbH" id="c6n-lZ-qus"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+            <point key="canvasLocation" x="928" y="-375"/>
+        </scene>
+        <!--Page 2-->
+        <scene sceneID="N8W-tK-CYN">
+            <objects>
+                <viewController id="6N9-jn-GqS" customClass="SecondVC" customModule="Closure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SSJ-5U-Gtb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is another page for create a new commit in git repository" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdQ-V9-Amv">
+                                <rect key="frame" x="78" y="394" width="258" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Leu-Zp-G2u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QdQ-V9-Amv" firstAttribute="centerY" secondItem="Leu-Zp-G2u" secondAttribute="centerY" id="6vQ-Dn-xWH"/>
+                            <constraint firstItem="QdQ-V9-Amv" firstAttribute="centerX" secondItem="Leu-Zp-G2u" secondAttribute="centerX" id="F1P-GV-csM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Page 2" id="IyQ-Xr-swv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHE-iD-BbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927.536231884058" y="314.73214285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TdR-lo-KiK">
@@ -171,7 +200,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2x-1s-Ri1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="93"/>
+            <point key="canvasLocation" x="1813" y="-375"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LTc-G9-2lC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Nsr-5Y-DKt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XYk-Df-j4P">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1Im-MX-xtd"/>
+                        <segue destination="6N9-jn-GqS" kind="relationship" relationship="viewControllers" id="KbH-3e-L2p"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUl-tI-D7I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
         </scene>
     </scenes>
     <resources>
